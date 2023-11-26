@@ -1,0 +1,52 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+    background-image: url('libro.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.book {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book h2 {
+    margin: 0;
+    padding: 15px;
+    background-color: #b08e6b;
+    color: #7a5c3c f;
+    font-size: 1.2em;
+}
+
+.book p {
+    margin: 0;
+    padding: 10px;
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: black;
+}
+
+.book p.author {
+    font-style: italic;
+    color: #666;
+}
+
+.book p.year {
+    color: #888;
+}
